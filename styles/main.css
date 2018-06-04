@@ -14221,6 +14221,12 @@ mark,
 .lexicon-icon-list li span {
   margin-left: 4px; }
 
+@media (min-width: 768px) {
+  .lexicon-icon-list li {
+    float: left;
+    padding: 5px;
+    width: 33%; } }
+
 .color-card .card-subtitle {
   text-transform: uppercase;
   color: #6B6C7E; }
@@ -14228,13 +14234,20 @@ mark,
 .color-card .card-subtitle span {
   font-weight: 600;
   letter-spacing: .1ch;
-  color: #CDCED9; }
+  color: #CDCED9;
+  width: 6ch;
+  display: inline-block; }
 
-@media (min-width: 768px) {
-  .lexicon-icon-list li {
-    float: left;
-    padding: 5px;
-    width: 33%; } }
+textarea {
+  border: none;
+  resize: none;
+  padding: 0;
+  width: 12ch;
+  vertical-align: bottom;
+  text-transform: uppercase; }
+
+textarea:focus {
+  border: none; }
 
 .navbar-lexicon-site {
   background-color: transparent;
@@ -14256,7 +14269,28 @@ mark,
   .navbar-lexicon-site .navbar-nav .nav-link {
     font-weight: 700; }
   .navbar-lexicon-site .logo {
-    max-height: 40px; }
+    max-height: 32px; }
+
+nav.sidenav-menu-slider {
+  overflow: visible; }
+  nav.sidenav-menu-slider::before {
+    content: '';
+    background: #F5F5F8;
+    width: 100%;
+    height: 30vh;
+    display: block;
+    top: -20vh;
+    position: absolute;
+    z-index: 0; }
+  nav.sidenav-menu-slider::after {
+    content: '';
+    background: #F5F5F8;
+    width: 100%;
+    height: 30vh;
+    display: block;
+    bottom: -20vh;
+    position: absolute;
+    z-index: -1; }
 
 .navbar-mobile {
   background-color: #F5F5F8;
@@ -14277,7 +14311,9 @@ mark,
 .sidebar-offset {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  margin-bottom: 192px;
+  padding-bottom: 96px; }
   @media (min-width: 900px) {
     .sidebar-offset {
       margin-left: 376px; } }
@@ -14327,11 +14363,14 @@ mark,
 .sidebar-search {
   margin-bottom: 43.2px; }
 
+.content {
+  background: #FFF; }
+
 .content .sidebar-offset p {
   line-height: 24px;
   margin-bottom: 20px; }
   .content .sidebar-offset p a {
-    color: #4887FF; }
+    color: #0B63CE; }
 
 .content .sidebar-offset img {
   margin-bottom: 24px;
@@ -14656,6 +14695,9 @@ table {
 .home .font-weight-bold {
   font-weight: 900 !important; }
 
+.home a.card:hover {
+  text-decoration: none; }
+
 .home .card {
   border-bottom: 14px solid #FFF;
   border-radius: 14px;
@@ -14665,7 +14707,7 @@ table {
   transition: all 0.4s; }
   .home .card:hover {
     background-color: #F2F6FF;
-    border-color: #0B63CE;
+    border-color: #204589;
     box-shadow: 6px 9px 36px rgba(48, 49, 63, 0.2);
     transform: translateY(-3px); }
   .home .card .card-body {
@@ -14712,7 +14754,7 @@ table {
   .intro .btn-light {
     background-color: #fff;
     border-color: #fff;
-    color: #0B63CE;
+    color: #204589;
     font-size: 13px;
     letter-spacing: 1.5px;
     line-height: 24px;
@@ -14768,7 +14810,7 @@ table {
   .contact-us .media-body h1 {
     line-height: 1.4; }
   .contact-us .media-body a {
-    border-bottom: 5px solid #0B63CE;
+    border-bottom: 5px solid #204589;
     color: #393A4A;
     padding-bottom: 4px;
     transition: all 0.4s; }
@@ -14828,7 +14870,7 @@ table {
     width: 20px; }
 
 body {
-  background-color: #FFF;
+  background-color: #0B63CE;
   color: #30313F;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Tahoma, "Trebuchet MS", sans-serif;
   font-size: 1rem; }
